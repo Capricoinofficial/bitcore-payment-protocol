@@ -44,7 +44,7 @@
   "browser": "lib/browser.js",
   "dependencies": {
     "asn1.js": "=4.5.2",
-    "particl-bitcore-lib": "git@github.com:particl/particl-bitcore-lib.git",
+    "particl-bitcore-lib": "git://github.com/particl/particl-bitcore-lib.git",
     "jsrsasign": "=5.0.10",
     "protobufjs": "=5.0.1"
   },
