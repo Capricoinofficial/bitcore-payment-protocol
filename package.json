@@ -1,6 +1,6 @@
 {
   "name": "bitcore-payment-protocol",
-  "version": "1.2.1",
+  "version": "1.8.0",
   "description": "Payment Protocol (BIP70 and related) support for bitcore",
   "author": "BitPay <dev@bitpay.com>",
   "main": "index.js",
@@ -31,11 +31,17 @@
     {
       "name": "Esteban Ordano",
       "email": "eordano@gmail.com"
+    },
+    {
+      "name": "Matias Alejo Garcia",
+      "email": "ematiu@gmail.com"
     }
   ],
   "keywords": [
     "bitcoin",
-    "bitcore"
+    "bitcore",
+    "payment protocol",
+    "BIP70"
   ],
   "repository": {
     "type": "git",
@@ -43,17 +49,22 @@
   },
   "browser": "lib/browser.js",
   "dependencies": {
-    "asn1.js": "=4.5.2",
-    "capricoinplus-bitcore-lib": "git://github.com/Capricoinofficial/capricoinplus-bitcore-lib.git",
-    "jsrsasign": "=5.0.10",
-    "protobufjs": "=5.0.1"
+    "asn1.js": "^5.0.1",
+    "asn1.js-rfc3280": "^4.0.0",
+    "asn1.js-rfc5280": "^3.0.0",
+    "bs58": "^4.0.1",
+    "jsrsasign": "^8.0.12",
+    "protobufjs": "=5.0.3"
+  },
+  "peerDependencies": {
+    "capricoinplus-bitcore-lib": "git://github.com/Capricoinofficial/capricoinplus-bitcore-lib.git"
   },
   "devDependencies": {
-    "bitcore-build": "git://github.com/bitpay/bitcore-build.git#a93a9970e3a0b3f948309730d4e4af5100dddf5a",
-    "brfs": "^1.2.0",
-    "chai": "~1.10.0",
-    "gulp": "^3.8.10",
-    "sinon": "^1.17.3"
+    "bitcore-build": "https://github.com/bitpay/bitcore-build.git#1023e8a99cd42b9241ccafe8e34c52f308c10284",
+    "brfs": "^2.0.1",
+    "chai": "^4.2.0",
+    "gulp": "^4.0.0",
+    "sinon": "^7.1.1"
   },
   "license": "MIT"
 }
